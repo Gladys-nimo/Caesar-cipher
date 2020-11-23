@@ -14,5 +14,11 @@ public class CipherTest  {
         assertEquals("a",testCipher.getStatement());
     }
 
+    @Test
+    public void newCipher_readKey_2(){
+        Cipher testCipher = new Cipher("a",2);
+        assertEquals(2,testCipher.getKey());
+    }
+
 
 }

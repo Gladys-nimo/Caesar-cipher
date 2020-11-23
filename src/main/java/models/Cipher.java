@@ -11,4 +11,7 @@ public class Cipher {
     public String getStatement() {
         return mStatement;
     }
+    public int getKey() {
+        return mKey;
+    }
 }
