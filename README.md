@@ -14,3 +14,6 @@ gradle
 *create a test file for your project
 **create a main java class
 ##live link
+https://gladys-nimo.github.io/Caesar-cipher/
+## licence
+MIT
