@@ -34,6 +34,16 @@ public class CipherTest  {
         Cipher testCipher = new Cipher("cde",2);
         assertEquals("abc",testCipher.toDecrypt("cde",2));
     }
+    @Test
+    public void newCipher_encryptAStringUsingKey_ab(){
+        Cipher testCipher = new Cipher("yz",2);
+        assertEquals("ab",testCipher.isActuallyEncrypted("yz",2));
+    }
+    @Test
+    public void newCipher_decryptsAStringUsingAKey_yz(){
+        Cipher testCipher = new Cipher("ab",2);
+        assertEquals("yz",testCipher.toDecrypt("ab",2));
+    }
 
 
 }
